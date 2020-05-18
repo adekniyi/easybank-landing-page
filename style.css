@@ -109,6 +109,16 @@ nav input{
 .subcont1 p{
     font-size: 1.1rem;
 }
+.lastcont{
+    margin-top: 10%;
+    padding-bottom: 5rem;
+}
+.lastcont h2{
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+}
+
 
 .sublastcont{
     display: flex;
@@ -132,4 +142,29 @@ nav input{
  }
  .sublast1 .subwrap h5{
     padding-bottom: 0.5rem;
+ }
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: chartreuse;
+ }
+ .subfoot2,.subfoot1,.subfoot4 {
+    display: flex;
+    flex-direction: column;
+ }
+ .subfoot2 a{
+     text-decoration: none;
+     color: black;
+     padding-bottom: 1rem;
+ }
+ .subfoot4 input{
+    width:170px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 1rem;
  }
