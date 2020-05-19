@@ -5,7 +5,7 @@
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: blue;
+    background-color: white;
     align-items: center;
     height: 50px;
     padding-top: 0.7rem;
@@ -39,27 +39,30 @@ nav input{
 }
 .img{
     background-image:url(./images/bg-intro-desktop.svg);
-    background-position: top -250px left -130px;
+    background-position: top -210px left -80px;
     background-repeat: no-repeat;
-    background-size: 1300px;
-    width: 60%;
+    background-size: 151.3%;
+    width: 55%;
+    overflow: hidden;
 }
 .img img{
     width: 100%;
+    margin-top: -100px;
+    overflow: hidden;
 }
 .writeup{
-    width: 40%;
-    margin-top: 15%;
+    width: 45%;
+    margin-top: 7%;
     padding-left: 4rem;
     padding-right: 4rem;
 }
 .writeup h1{
-    font-size: 4rem;
-    padding-bottom: 1.2rem;
+    font-size: 3.2rem;
+    padding-bottom: 2%;
 }
 .writeup p{
     font-size: 1.3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 5%;
 }
 .writeup input{
     width:170px;
@@ -72,14 +75,14 @@ nav input{
     cursor: pointer;
 }
 .midcont1{
-    background-color: red;
+    background-color: hsl(0, 0%, 72%);
     padding-bottom: 7%;
 }
 .midcont2{
     padding-left: 4rem;
-    margin-top: -173px;
+    margin-top: -14%;
     width: 50%;
-    background-color: red;
+    /* background-color: red; */
 }
 .midcont2 h2{
     font-size: 3rem;
@@ -145,13 +148,21 @@ nav input{
  }
  .footer{
     display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: space-around;
-    background-color: chartreuse;
+    background-color: hsl(233, 26%, 24%);
  }
  .subfoot2,.subfoot1,.subfoot4 {
     display: flex;
     flex-direction: column;
  }
+ .subfoot1 .socialmedia{
+     margin-top: 30%;
+ }
+ .subfoot1 img{
+    /* background-color: white; */
+}
  .subfoot2 a{
      text-decoration: none;
      color: black;
