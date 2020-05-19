@@ -36,6 +36,17 @@ nav input{
     font-weight: 700;
     cursor: pointer;
 }
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 4px;
+}
+
 .midcont{
     display: flex;
 }
@@ -250,3 +261,206 @@ nav input{
     font-size: 1rem;
  }
  }
+
+
+
+ @media screen and (max-width:480px) {
+    /* body {
+        overflow: hidden;
+    } */
+    nav{
+        background-color: yellow;
+        width: 100%;
+    }
+    nav ul {
+        position: absolute;
+        /* right: 105px; */
+        right: 22%;
+        height: 35vh;
+        top: 10vh;
+        background-color: rgba(231, 221, 221, 0.397);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        transform: translateY(-150%);
+        transition: transform 0.5s ease-in;
+        overflow: hidden;
+    }
+    nav ul li a {
+        color: black;
+    }
+    nav input {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .midcont{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img{
+        background-image:url(./images/bg-intro-mobile.svg);
+        background-position: top -190px left -80px;
+        background-repeat: no-repeat;
+        background-size: 155.3%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .img img{
+        width: 100%;
+        margin-top: -100px;
+        overflow: hidden;
+    }
+    .writeup{
+        width: 100%;
+        margin-top: 1%;
+        text-align: center;
+        padding-bottom: 5rem;
+        /* padding-left: 4rem;
+        padding-right: 4rem; */
+    }
+    .writeup h1{
+        line-height: 3.5rem;
+        /* font-size: 3.2rem;
+        padding-bottom: 2%; */
+    }
+    .writeup p{
+        line-height: 1.5rem;
+        /* font-size: 1.3rem;
+        padding-bottom: 5%; */
+    }
+    .writeup input{
+        /* width:170px;
+        height: 45px;
+        border-radius: 20px;
+        border: none;
+        background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        margin-bottom: 2rem; */
+    }
+    .midcont1{
+        width: 100%;
+        padding-bottom: 7%;
+    }
+    .midcont2{
+        padding-left: 0;
+        margin-top: 0%;
+        text-align: center;
+        width: 100%;
+    }
+    .midcont2 h2{
+        /* font-size: 3rem;
+        padding-top: 15%;
+        padding-bottom: 1.2rem; */
+    }
+    .midcont2 p{
+        /* font-size: 1.3rem;
+        padding-bottom: 10%; */
+    }
+    .subcont{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .subcont1{
+       /* width: 20%; */
+       /* margin-right: 1rem; */
+    }
+    .subcont1 h5{
+        /* padding-bottom: 1rem;
+        font-size: 1.5rem; */
+    }
+    .subcont1 img{
+        /* padding-bottom: 1rem; */
+    }
+    .subcont1 p{
+        /* font-size: 1.1rem; */
+    }
+    .lastcont{
+        margin-top: 10%;
+        padding-bottom: 5rem;
+    }
+    .lastcont h2{
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    
+    .sublastcont{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .sublast1{
+        width: 100%;
+        margin-right: 0;
+     }
+     .sublast1 img{
+     }
+     .subwrap{
+         width: 80%;
+         margin: 0 auto;
+         padding-left: 1rem;
+     }
+     .sublast1 .subwrap h6{
+        
+     }
+     .sublast1 .subwrap h5{
+      
+     }
+     .sublast1 .subwrap p{
+       
+     }
+     .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        /* padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: space-around;
+        background-color: hsl(233, 26%, 24%); */
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .nav-active {
+    transform: translateY(0%);
+}
+
+.toggle .box1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .box2 {
+    opacity: 0;
+}
+
+.toggle .box3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
