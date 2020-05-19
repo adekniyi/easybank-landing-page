@@ -1,10 +1,12 @@
  *{
      margin: 0;
      padding: 0;
+     font-family: 'Public Sans', sans-serif;
  }
 nav{
     display: flex;
     justify-content: space-around;
+    justify-items: center;
     background-color: white;
     align-items: center;
     height: 50px;
@@ -29,7 +31,7 @@ nav input{
     height: 45px;
     border-radius: 20px;
     border: none;
-    background-color: limegreen;
+    background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
     color: white;
     font-weight: 700;
     cursor: pointer;
@@ -39,9 +41,9 @@ nav input{
 }
 .img{
     background-image:url(./images/bg-intro-desktop.svg);
-    background-position: top -210px left -80px;
+    background-position: top -190px left -80px;
     background-repeat: no-repeat;
-    background-size: 151.3%;
+    background-size: 155.3%;
     width: 55%;
     overflow: hidden;
 }
@@ -69,10 +71,11 @@ nav input{
     height: 45px;
     border-radius: 20px;
     border: none;
-    background-color: limegreen;
+    background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
     color: white;
     font-weight: 700;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 .midcont1{
     background-color: hsl(0, 0%, 72%);
@@ -80,7 +83,7 @@ nav input{
 }
 .midcont2{
     padding-left: 4rem;
-    margin-top: -14%;
+    margin-top: -10%;
     width: 50%;
     /* background-color: red; */
 }
@@ -135,6 +138,9 @@ nav input{
  .sublast1 img{
     width: 100%;
     height: 200px;
+    padding-bottom: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
  }
  .subwrap{
      width: 65%;
@@ -142,9 +148,14 @@ nav input{
  }
  .sublast1 .subwrap h6{
     padding-bottom: 0.5rem;
+    color: grey;
  }
  .sublast1 .subwrap h5{
     padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+ }
+ .sublast1 .subwrap p{
+    color: grey;
  }
  .footer{
     display: flex;
@@ -165,7 +176,7 @@ nav input{
 }
  .subfoot2 a{
      text-decoration: none;
-     color: black;
+     color: white;
      padding-bottom: 1rem;
  }
  .subfoot4 input{
@@ -173,9 +184,69 @@ nav input{
     height: 45px;
     border-radius: 20px;
     border: none;
-    background-color: limegreen;
+    background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
     color: white;
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 1rem;
+ }
+
+
+
+
+ /* responsiveness */
+ @media only screen and (max-width: 960px) {
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+    }
+    .writeup{
+    width: 45%;
+    margin-top: 3%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.writeup h1{
+    font-size: 2.8rem;
+}
+.writeup p{
+    font-size: 1.1rem;
+}
+.midcont2{
+    padding-left: 1rem;
+    width: 60%;
+    /* background-color: red; */
+}
+.midcont2 h2{
+    font-size: 2.8rem;
+}
+.midcont2 p{
+    font-size: 1.1rem;
+}
+.subcont{
+    width: 97%;
+    padding-left: 1rem;
+}
+.subcont1 h5{
+    font-size: 1.2rem;
+}
+.subcont1 p{
+    font-size: 1rem;
+}
+.sublastcont{
+    display: flex;
+    width: 97%;
+    padding-left: 1rem;
+}
+.sublast1{
+    margin-right: 0.7rem;
+ }
+ .subwrap{
+     width: 85%;
+     padding-left: 1rem;
+ }
+ .sublast1 .subwrap h5{
+    font-size: 1rem;
+ }
  }
