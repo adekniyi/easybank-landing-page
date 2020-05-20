@@ -43,7 +43,7 @@ nav input{
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: red;
+    background-color: black;
     margin: 4px;
 }
 
@@ -181,9 +181,12 @@ nav input{
  }
  .subfoot1 .socialmedia{
      margin-top: 30%;
+     padding-right: 0.5rem;
+
  }
- .subfoot1 img{
-    /* background-color: white; */
+ .subfoot1 .socialmedia img{
+    padding-right: 0.5rem;
+
 }
  .subfoot2 a{
      text-decoration: none;
@@ -195,12 +198,21 @@ nav input{
     height: 45px;
     border-radius: 20px;
     border: none;
-    background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
+  
     color: white;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
  }
+ input {
+    background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
+    /* transition: 10s; */
+    transition:all 10s ease-in 10s;
+  }
+ input:hover {
+    background-image: linear-gradient(to left,#05c79a, #0ace52);
+    transition:all 10s ease-in 10s;
+  }
 
 
 
@@ -217,9 +229,10 @@ nav input{
     margin-top: 3%;
     padding-right: 1rem;
     padding-left: 1rem;
+    align-items: center;
 }
 .writeup h1{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 .writeup p{
     font-size: 1.1rem;
@@ -230,7 +243,7 @@ nav input{
     /* background-color: red; */
 }
 .midcont2 h2{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 .midcont2 p{
     font-size: 1.1rem;
@@ -264,32 +277,28 @@ nav input{
 
 
 
- @media screen and (max-width:480px) {
+  @media screen and (max-width:480px) {
     /* body {
         overflow: hidden;
     } */
-    nav{
-        background-color: yellow;
-        width: 100%;
-    }
     nav ul {
         position: absolute;
-        /* right: 105px; */
-        right: 22%;
-        height: 35vh;
-        top: 10vh;
-        background-color: rgba(231, 221, 221, 0.397);
+        right: 10%;
+        height: 40vh;
+        top: 11.5%;
+        width: 80%;
+        background-color: white;
         flex-direction: column;
         align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 10px;
         transform: translateY(-150%);
-        transition: transform 0.5s ease-in;
+        transition: transform 1s ease-in;
         overflow: hidden;
     }
     nav ul li a {
-        color: black;
+        color: rgb(26, 25, 25);
     }
     nav input {
         display: none;
@@ -299,7 +308,7 @@ nav input{
     }
     .midcont{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
     .img{
         background-image:url(./images/bg-intro-mobile.svg);
@@ -315,33 +324,17 @@ nav input{
         overflow: hidden;
     }
     .writeup{
-        width: 100%;
+        width: 90%;
         margin-top: 1%;
         text-align: center;
         padding-bottom: 5rem;
-        /* padding-left: 4rem;
-        padding-right: 4rem; */
     }
     .writeup h1{
         line-height: 3.5rem;
-        /* font-size: 3.2rem;
-        padding-bottom: 2%; */
+        font-size: 2.5rem;
     }
     .writeup p{
         line-height: 1.5rem;
-        /* font-size: 1.3rem;
-        padding-bottom: 5%; */
-    }
-    .writeup input{
-        /* width:170px;
-        height: 45px;
-        border-radius: 20px;
-        border: none;
-        background-image: linear-gradient(to left,#0ae8b5, #0ceb5e);
-        color: white;
-        font-weight: 700;
-        cursor: pointer;
-        margin-bottom: 2rem; */
     }
     .midcont1{
         width: 100%;
@@ -349,18 +342,11 @@ nav input{
     }
     .midcont2{
         padding-left: 0;
+        /* padding-right: 0.5rem; */
         margin-top: 0%;
         text-align: center;
-        width: 100%;
-    }
-    .midcont2 h2{
-        /* font-size: 3rem;
-        padding-top: 15%;
-        padding-bottom: 1.2rem; */
-    }
-    .midcont2 p{
-        /* font-size: 1.3rem;
-        padding-bottom: 10%; */
+        width: 90%;
+        margin: 0 auto;
     }
     .subcont{
         display: flex;
@@ -371,27 +357,17 @@ nav input{
         padding-left: 0;
     }
     .subcont1{
-       /* width: 20%; */
-       /* margin-right: 1rem; */
-    }
-    .subcont1 h5{
-        /* padding-bottom: 1rem;
-        font-size: 1.5rem; */
-    }
-    .subcont1 img{
-        /* padding-bottom: 1rem; */
-    }
-    .subcont1 p{
-        /* font-size: 1.1rem; */
+        margin-right: 0;
+        padding-top: 2rem;
     }
     .lastcont{
         margin-top: 10%;
         padding-bottom: 5rem;
     }
     .lastcont h2{
-        padding-left: 4rem;
+        padding-left: 0;
         padding-bottom: 2rem;
-        font-size: 3rem;
+        font-size: 2.7rem;
         text-align: center;
     }
     
@@ -406,22 +382,12 @@ nav input{
     .sublast1{
         width: 100%;
         margin-right: 0;
-     }
-     .sublast1 img{
+        padding-top: 2rem;
      }
      .subwrap{
          width: 80%;
          margin: 0 auto;
          padding-left: 1rem;
-     }
-     .sublast1 .subwrap h6{
-        
-     }
-     .sublast1 .subwrap h5{
-      
-     }
-     .sublast1 .subwrap p{
-       
      }
      .footer{
         display: flex;
@@ -429,12 +395,20 @@ nav input{
         width: 100%;
         margin: 0 auto;
         align-items: center;
-        /* padding-top: 2rem;
-        padding-bottom: 2rem;
-        justify-content: space-around;
-        background-color: hsl(233, 26%, 24%); */
+        text-align: center;
+        /* justify-content: center;
+        justify-items: center;  */
      }
-}
+     .subfoot4 input{
+        width:170px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+     }
+     /* .subfoot1 .socialmedia img{
+        padding-right: 0.5rem;
+   
+    } */
+} 
 
 
 
@@ -463,4 +437,8 @@ nav input{
 
 .toggle .box3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.fade{
+    background-color: rgb(105, 105, 105,0.5);
 }
